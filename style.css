@@ -1,8 +1,10 @@
-﻿{
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Główny styl */
 
 body {
     font-family: 'Georgia', serif;
@@ -26,14 +28,10 @@ header p {
 nav {
     background-color: #f1e1ec;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 15px 10%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-justify-content: flex-end;
-}
-
-nav {
     position: relative; 
 }
 
@@ -43,11 +41,9 @@ nav {
     left: 30px; 
 }
 
-
-
 .logo-img {
     height: 200px;
-border: 2px solid #b5739d; 
+    border: 2px solid #b5739d; 
 }
 
 nav ul {
@@ -63,6 +59,7 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
+
 main {
     padding: 40px 10%;
     background-image: url('imagesbackground.jpg');
@@ -104,7 +101,6 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-
 #reservation form {
     display: flex;
     flex-direction: column;
@@ -131,7 +127,6 @@ section h2 {
 #reservation button:hover {
     background-color: #69293a;
 }
-
 
 .contact-form {
     display: flex;
@@ -179,3 +174,74 @@ footer {
     padding: 20px;
     font-size: 0.9em;
 }
+
+/* --- Style adaptacyjne --- */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    .logo-container {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .logo-img {
+        height: 120px;
+        width: auto;
+    }
+
+    main {
+        padding: 20px 5%;
+        background-attachment: scroll;
+    background-attachment: fixed;
+    }
+
+    .gallery img {
+        width: 100%;
+        min-width: auto;
+        border-radius: 10px;
+    }
+
+    section {
+        padding: 20px 15px;
+        margin-bottom: 40px;
+    }
+
+    #reservation form,
+    .contact-form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    #reservation input,
+    #reservation button,
+    .
