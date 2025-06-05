@@ -207,6 +207,9 @@ footer {
     main {
         padding: 20px 5%;
         background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     }
 
