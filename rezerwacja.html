@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📅 Rezerwacja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PH8DKZMNM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2PH8DKZMNM');
+</script>
+<body>
+  <header>
+    <h1>📅 Rezerwacja stolika</h1>
+    <p>🍽️ Zarezerwuj stolik i ciesz się wyjątkowym doświadczeniem kulinarnym!</p>
+  </header>
+
+  <nav>
+    <div class="logo-container">
+        <img src="sun.jpg" alt="Restaurant Logo" class="logo-img">
+    </div>
+    <ul>
+      <li><a href="index.html">🏠 Strona główna</a></li>
+      <li><a href="rezerwacja.html">📅 Rezerwacja</a></li>
+      <li><a href="menu.html">📋 Menu</a></li>
+      <li><a href="galeria.html">🖼️ Galeria</a></li>
+      <li><a href="onas.html">👨‍🍳 O nas</a></li>
+      <li><a href="kontakt.html">📞 Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="reservation">
+      <h2>📝 Formularz rezerwacji</h2>
+      <form action="rezerwacja.php" method="POST">
+    <input type="text" name="imie" placeholder="👤 Imię i nazwisko" required />
+    <input type="email" name="email" placeholder="📧 Email" required />
+    <input type="tel" name="telefon" placeholder="📱 Telefon" required />
+    <input type="date" name="data" required />
+    <input type="time" name="godzina" required />
+    <input type="number" name="osoby" placeholder="👥 Liczba osób" min="1" required />
+    <button type="submit">✍️ Zarezerwuj</button>
+</form>
+
+      <p>📨 Po wysłaniu formularza skontaktujemy się z Tobą w celu potwierdzenia rezerwacji.</p>
+    </section>
+
+    <section id="benefits">
+      <h3>🎉 Dlaczego warto rezerwować wcześniej?</h3>
+      <ul>
+        <li>✅ Gwarancja wolnego stolika nawet w godzinach szczytu</li>
+        <li>✅ Możliwość wyboru preferowanego miejsca (np. ogródek 🌿, sala VIP ⭐)</li>
+        <li>✅ Dodatkowe zniżki 💸 i promocje 🎁 dla stałych gości</li>
+        <li>✅ Spersonalizowana obsługa 🤝 według Twoich potrzeb</li>
+      </ul>
+    </section>
+
+    <section id="fun">
+      <h3>🎮 Masz chwilę wolnego czasu? Zrelaksuj się!</h3>
+      <p>
+        ⏳ Czekasz na potwierdzenie rezerwacji? Zagraj w klasyczną grę przeglądarkową 👉
+        <a href="https://chromedino.com/" target="_blank" rel="noopener">Chrome Dino</a> 🦖 – sprawdź, ile punktów zdobędziesz!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 🌞 Restauracja Słoneczna. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>

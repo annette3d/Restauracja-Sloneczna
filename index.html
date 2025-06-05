@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ Restauracja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PH8DKZMNM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2PH8DKZMNM');
+</script>
+<body>
+    <header>
+        <h1>🌞 Restauracja Słoneczna</h1>
+        <p>🍴 Witamy w naszej klimatycznej restauracji z pyszną kuchnią i domową atmosferą!</p>
+    </header>
+
+    <nav>
+         <div class="logo-container">
+        <img src="sun.jpg" alt="Restaurant Logo" class="logo-img">
+    </div>
+        <ul>
+            <li><a href="index.html">🏠 Strona główna</a></li>
+            <li><a href="rezerwacja.html">📅 Rezerwacja</a></li>
+            <li><a href="menu.html">📋 Menu</a></li>
+            <li><a href="galeria.html">🖼️ Galeria</a></li>
+            <li><a href="onas.html">👨‍🍳 O nas</a></li>
+            <li><a href="kontakt.html">📞 Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="reservation">
+            <h2>📅 Rezerwacja stolika</h2>
+            <form action="rezerwacja.php" method="POST">
+    <input type="text" name="imie" placeholder="👤 Imię i nazwisko" required />
+    <input type="email" name="email" placeholder="📧 Email" required />
+    <input type="tel" name="telefon" placeholder="📱 Telefon" required />
+    <input type="date" name="data" required />
+    <input type="time" name="godzina" required />
+    <input type="number" name="osoby" placeholder="👥 Liczba osób" min="1" required />
+    <button type="submit">✍️ Zarezerwuj</button>
+</form>
+
+        </section>
+
+        <section id="menu">
+            <h2>📋 Nasze Menu</h2>
+            <ul>
+                <li><strong>🍳 Śniadania:</strong>  Japońskie pancakes,  burrata,  omlet z jabłkami,  tost francuski z malinami,  granola z jogurtem greckim,  croissant z serem i szynką</li>
+                <li><strong>🍽️ Obiady:</strong>  Zupa Pho,  pierogi ruskie,  kapusta z pieczarkami,  schabowy z ziemniakami,  makaron z łososiem,  curry z ciecierzycą,  burger wołowy</li>
+                <li><strong>🌙 Kolacje:</strong>  Krewetki po toskańsku,  tarta ze szparagami,  sałatka cezar z kurczakiem,  zupa krem z dyni,  carpaccio z buraka</li>
+                <li><strong>🍰 Desery:</strong>  Tiramisu,  sernik z białą czekoladą,  brownie z orzechami,  lody domowej roboty</li>
+                <li><strong>🍹 Napoje:</strong>  Kawa,  herbata,  lemoniada,  koktajle owocowe,  wino czerwone i białe,  piwo rzemieślnicze</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>🖼️ Galeria</h2>
+            <div class="gallery">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+                <img src="img4.jpg">
+                <img src="img5.jpg">
+                <img src="img6.jpg">
+                <img src="img7.jpg">
+                <img src="img8.jpg">
+                <img src="img9.jpg">
+                <img src="img10.jpg">
+            </div>
+        </section>
+
+        <section id="onas">
+            <h2>👨‍🍳 O nas</h2>
+            <p>🍽️ Restauracja Słoneczna to miejsce z duszą – od 2001 roku serwujemy dania łączące tradycję z nowoczesnością 🌿. Kochamy gotować i dzielić się smakiem z naszymi gośćmi 💛.</p>
+            <p>🌍 Współpracujemy z lokalnymi dostawcami 🥕, a nasz szef kuchni – Paul Hollywood ⭐ – wnosi do menu odrobinę brytyjskiej finezji 🇬🇧 i światowej klasy smaku 👨‍🍳.</p>
+            <p>🏡 Zapraszamy do przytulnego wnętrza, idealnego na każdą okazję – rodzinny obiad 👨‍👩‍👧‍👦, romantyczną kolację 💕 czy spotkanie z przyjaciółmi 🕯️🍷.</p>
+        </section>
+
+        <section id="kontakt">
+            <h2>📞 Kontakt</h2>
+            <p><strong>📱 Telefon:</strong> +48 123 456 789</p>
+            <p><strong>📧 Email:</strong> kontakt@sloneczna.pl</p>
+            <p><strong>📍 Adres:</strong> ul. Słoneczna 7, Wrocław</p>
+            <p><strong>🕐 Godziny otwarcia:</strong><br>
+                🗓️ Poniedziałek - Piątek: 10:00 - 22:00<br>
+                🗓️ Sobota - Niedziela: 12:00 - 23:00</p>
+
+            <form class="contact-form" action="kontakt.php" method="POST">
+    <input type="text" name="imie" placeholder="🧑 Imię i nazwisko" required />
+    <input type="email" name="email" placeholder="📧 Email" required />
+    <textarea name="wiadomosc" placeholder="✍️ Twoja wiadomość" rows="4" required></textarea>
+    <button type="submit">📨 Wyślij</button>
+</form>
+
+
+            <div class="social-media">
+                <p>🔗 Znajdź nas:</p>
+                <a href="#">📘 Facebook</a> | <a href="#">📷 Instagram</a>
+            </div>
+
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97603.36763107696!2d16.87102589722717!3d51.12700620810764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc2ce264ed9ef%3A0x74c25cb6c3fa836e!2sWroc%C5%82aw!5e0!3m2!1spl!2spl!4v1716924190010!5m2!1spl!2spl" 
+                    width="100%" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 🌞 Restauracja Słoneczna. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>

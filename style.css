@@ -1,0 +1,181 @@
+﻿{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fdf9f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #845880;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #f1e1ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+justify-content: flex-end;
+}
+
+nav {
+    position: relative; 
+}
+
+.logo-container {
+    position: absolute;
+    top: -170px; 
+    left: 30px; 
+}
+
+
+
+.logo-img {
+    height: 200px;
+border: 2px solid #b5739d; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+main {
+    padding: 40px 10%;
+    background-image: url('imagesbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    margin-bottom: 60px;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #845880;
+    border-bottom: 2px solid #845880;
+    padding-bottom: 5px;
+    text-align: center;
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 30%;
+    min-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+#reservation form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#reservation input, #reservation button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#reservation button {
+    background-color: #845880;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservation button:hover {
+    background-color: #69293a;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #845880;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #69293a;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-media a {
+    color: #845880;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #845880;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
